@@ -302,20 +302,160 @@ class B_M_M{
 /*--------------------------------------------------------------------------*/
 class Calculator{
 	public:
-		
+		void Calculator_F()
+		{
+			cout<<"Type and list of computations : \n"<<"  1 = Number_To_Binary \n"<<"  2 = Biary_To_Number \n"<<"  3 = Multiplication \n";
+			cout<<"  4 = Subtraction \n"<<"  5 = Factorial \n"<<"  6 = Division \n"<<"  7 = Percent  \n"<<"  8 = Radical  \n" << "  9 = Sum  \n";
+			cout<<" 10 = Sin \n"<<" 11 = Cos  \n"<<" 12 = Tan  \n"<<" 13 = Cot \n"<<" 14 = Log \n"<<" 15 = Mod\n";
+			
+			int x;
+			cout<<"Please specify your calculation type ==> ";cin>>x;
+			
+			switch(x)
+			{
+				case 1:
+					
+				break;
+
+				case 2:
+					
+				break;
+				
+				case 3:
+					
+				break;
+				
+				case 4:
+					
+				break;
+				
+				case 5:
+					
+				break;
+				
+				case 6:
+					
+				break;
+				
+				case 7:
+					
+				break;
+				
+				case 8:
+					
+				break;
+				
+				case 9:
+					
+				break;
+				
+				case 10:
+					
+				break;
+				
+				case 11:
+					
+				break;
+				
+				case 12:
+					
+				break;
+				
+				case 13:
+					
+				break;
+				
+				case 14:
+					
+				break;
+				
+				case 15:
+					
+				break;
+				
+				default:
+					
+				break;
+			}
+		}
 }h5;
 /*--------------------------------------------------------------------------*/
 class Convert_Numbers_To_Letters{
 	public:
-		void Convert_Numbers_To_Letters_F()
+		int Convert_Numbers_To_Letters_F()
 		{
-			char x;
-			cout<<"Enter One Of The Items[fa---en] ==> ";cin >>x;
-			switch(x)
+			string x;
+			cout<<"Enter One Of The Items[fa=f---en=e] ==> ";cin >>x;
+			switch('x')
 			{
-				case 'fa':
-						Loop:
-					    int i = 0,a=0,b=0;
+				case 'e':
+					pook1:
+					int n,yekan,dahgan;
+					cout<<"enter n (0-99):";
+					cin>>n;
+					if(n<0 || n>99)
+					       return 0;
+					if((n>10&&n<20)||n==0)
+					
+					{
+					switch(n){
+					case 0:cout<<"zero";break;
+					case 11:cout<<"eleven";break;
+					case 12:cout<<"twelve";break;
+					case 13:cout<<"thirteen";break;
+					case 14:cout<<"fourteen";break;
+					case 15:cout<<"fifteen";break;
+					case 16:cout<<"sixteen";break;
+					case 17:cout<<"seventeen";break;
+					case 18:cout<<"eighteen";break;
+					case 19:cout<<"nineteen";break;
+					}//END OF SWITCH
+					}//end of if
+					else{
+					yekan=n%10;
+					n/=10;
+					dahgan=n%10;
+					switch(dahgan)
+					{
+					case 1:cout<<"ten ";break;
+					case 2:cout<<"twenty ";break;
+					case 3:cout<<"thirty ";break;
+					case 4:cout<<"fourty ";break;
+					case 5:cout<<"fifty ";break;
+					case 6:cout<<"sixty ";break;
+					case 7:cout<<"seventy ";break;
+					case 8:cout<<"eighty ";break;
+					case 9:cout<<"ninety ";break;
+					}
+					switch(yekan)
+					{
+					case 1:cout<<"one";break;
+					case 2:cout<<"two";break;
+					case 3:cout<<"three";break;
+					case 4:cout<<"four";break;
+					case 5:cout<<"five";break;
+					case 6:cout<<"six";break;
+					case 7:cout<<"seven";break;
+					case 8:cout<<"eight";break;
+					case 9:cout<<"nine";break;
+					}//end of stwitch
+					}//end of else
+					char ch;
+					cout<<"\n\n"<<"continue?(y/n):";cin>>ch;
+					if(ch=='n' || ch=='N')
+						return 0;
+					else
+					{
+					cout<<endl;
+					goto pook1;
+					}
+				break;
+					
+					
+					
+				case 'f':
+						pook2:
+						int i = 0,a=0,b=0;
 					    char  adad[13];
 					    cin >> adad;
 					    for (; adad[i] != NULL; i++);
@@ -324,7 +464,7 @@ class Convert_Numbers_To_Letters{
 					        if(adad[0]=='0')
 					        {
 					            cout<<"Sefr";
-					            return;
+					            return 0;
 					        }
 					        if (((i - j - 1) % 3) == 0)
 					        {
@@ -505,7 +645,7 @@ class Convert_Numbers_To_Letters{
 					            if(adad[j+1]=='0'&&adad[j+2]=='0'&&adad[j+3]=='0')
 					            {
 					                cout<<" Hezar ";
-					                break;
+					                return 0;
 					            }
 					            else
 					            {
@@ -544,81 +684,22 @@ class Convert_Numbers_To_Letters{
 					            cout<<" o ";
 					    }
 						cout<<"\n\n"<<"continue?(y/n):";
-						char ch1;
-						cin>>ch1;
-						if(ch1=='n' || ch1=='N')
-						break;
+						char chs;
+						cin>>chs;
+						if(chs=='n' || chs=='N')
+							return 0;
 						else
 						{
 						cout<<endl;
-						goto Loop;
-						}	
-					break;	
-					
-				case 'en':
-					int n,yekan,dahgan;
-					cout<<"enter n (0-99):";
-					cin>>n;
-					if(n<0 || n>99)
-					       return;
-					if((n>10&&n<20)||n==0)
-					{
-					switch(n){
-					case 0:cout<<"zero";break;
-					case 11:cout<<"eleven";break;
-					case 12:cout<<"twelve";break;
-					case 13:cout<<"thirteen";break;
-					case 14:cout<<"fourteen";break;
-					case 15:cout<<"fifteen";break;
-					case 16:cout<<"sixteen";break;
-					case 17:cout<<"seventeen";break;
-					case 18:cout<<"eighteen";break;
-					case 19:cout<<"nineteen";break;
-					}//END OF SWITCH
-					}//end of if
-					else{
-					yekan=n%10;
-					n/=10;
-					dahgan=n%10;
-					switch(dahgan)
-					{
-					case 1:cout<<"ten ";break;
-					case 2:cout<<"twenty ";break;
-					case 3:cout<<"thirty ";break;
-					case 4:cout<<"fourty ";break;
-					case 5:cout<<"fifty ";break;
-					case 6:cout<<"sixty ";break;
-					case 7:cout<<"seventy ";break;
-					case 8:cout<<"eighty ";break;
-					case 9:cout<<"ninety ";break;
-					}
-					switch(yekan)
-					{
-					case 1:cout<<"one";break;
-					case 2:cout<<"two";break;
-					case 3:cout<<"three";break;
-					case 4:cout<<"four";break;
-					case 5:cout<<"five";break;
-					case 6:cout<<"six";break;
-					case 7:cout<<"seven";break;
-					case 8:cout<<"eight";break;
-					case 9:cout<<"nine";break;
-					}//end of stwitch
-					}//end of else
-					cout<<"\n\n"<<"continue?(y/n):";
-					char ch;
-					cin>>ch;
-					if(ch=='n' || ch=='N')
+						goto pook2;
+						}
 					break;
-					else
-					{
-					cout<<endl;
-					goto Loop;
-					}	
-					break;	
+				deafult:
+					cout<<"Please Enter Your good Characters";
+					break;
 			}
 		}
-		
+
 }h6;
 /*--------------------------------------------------------------------------*/
 class Nice_Print{
@@ -1102,6 +1183,8 @@ int main ()
 				break;
 				
 			case 2:
+				h6.Convert_Numbers_To_Letters_F();
+				break;
 				
 			case 3:
 				h11.Multiplication_Table_F();
@@ -1116,6 +1199,8 @@ int main ()
 				break;
 				
 			case 6:
+				h5.Calculator_F();
+				break;
 				
 			case 7:
 				h7.Nice_Print_F();
@@ -1144,7 +1229,7 @@ int main ()
 				break;
 							
 			default:
-				cout<<"";
+				cout<<"edwdjio";
 		}
 	}
 	
