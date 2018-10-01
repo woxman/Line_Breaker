@@ -735,50 +735,62 @@ class Nice_Print{
 		void Nice_Print_F()
 		{
 				system("cls");
-				system("color 06");
+				system("color 07");
 
-				string FN0,LN0,FAN0,FN1,LN1,FAN1,FN2,LN2,FAN2;
 				#define SY 31558150
 				#define NY 1397
+				string FN0,LN0,FAN0,FN1,LN1,FAN1,FN2,LN2,FAN2;
 				int LT0,LT1,LT2,YB0,YB1,YB2;
-
+				
 				cout << "|F|\t----------------------------------------------\n";
-				cout << "|I|\t|Please Enter Your First  Name ==>";getline(cin,FN0);cin.ignore();
-				cout << "|R|\t|Please Enter Your Last   Name ==>";getline(cin,LN0);cin.ignore();
-				cout << "|S|\t|Please Enter Your Father Name ==>";getline(cin,FAN0);cin.ignore();
-				cout << "|T|\t|Please Enter The Year of Birth==>";cin  >> YB0;cin.ignore();
+				cin.ignore();
+				cout << "|I|\t|Please Enter Your First  Name ==>";getline(cin,FN0);
+				cout << "|R|\t|Please Enter Your Last   Name ==>";getline(cin,LN0);
+				cout << "|S|\t|Please Enter Your Father Name ==>";getline(cin,FAN0);
+				cout << "|T|\t|Please Enter The Year of Birth==>";cin  >> YB0;
 				cout << "\\_/   \t----------------------------------------------\n\n";
 
 				cout << "|S|\t----------------------------------------------\n";
+				cin.ignore();
 				cout << "|E|\t|Please Enter Your First  Name ==>";getline(cin,FN1);
-				cout << "|C|\t|Please Enter Your Last   Name ==>";getline(cin,LN1);cin.ignore();
-				cout << "|O|\t|Please Enter Your Father Name ==>";getline(cin,FAN1);cin.ignore();
+				cout << "|C|\t|Please Enter Your Last   Name ==>";getline(cin,LN1);
+				cout << "|O|\t|Please Enter Your Father Name ==>";getline(cin,FAN1);
 				cout << "|N|\t|Please Enter The Year of Birth==>";cin  >> YB1;
 				cout << "|D|\n";
 				cout << "\\_/   \t----------------------------------------------\n\n";
 
 
 				cout << "|T|\t----------------------------------------------\n";
+				cin.ignore();
 				cout << "|H|\t|Please Enter Your First  Name ==>";getline(cin,FN2);
-				cout << "|I|\t|Please Enter Your Last   Name ==>";getline(cin,LN2);cin.ignore();
-				cout << "|R|\t|Please Enter Your Father Name ==>";getline(cin,FAN2);cin.ignore();
-				cout << "|D|\t|Please Enter The Year of Birth==>";cin  >> YB2;
+				cout << "|I|\t|Please Enter Your Last   Name ==>";getline(cin,LN2);
+				cout << "|R|\t|Please Enter Your Father Name ==>";getline(cin,FAN2);
+				cout << "|D|\t|Please Enter The Year of Birth==>";cin  >> YB1;
 				cout << "\\_/   \t----------------------------------------------\n\n\n\n";
-
+				sleep(3000);
+				system("cls");
 
 				LT0 =(NY - YB0)* SY;
 				LT1 =(NY - YB1)* SY;
-				LT2 =(NY - YB2)* SY;
+				LT2 =(NY - YB1)* SY;
 
-				cout << "\tFIRST NAME";cout << "\tLAST NAME";cout << "\tFATHER NAME";cout << "\tYear Of Birth";cout << "\tLifeTime(Sec)\n";
-				cout << "\t____________";cout << "\t____________";cout << "\t____________";cout << "\t____________";cout << "\t____________\n";
-				cout << "\t " << FN0 << "\t\t " << LN0 << "\t" << FAN0 << "\t\t  " << YB0  << "\t\t" << LT0 <<"\n";
-				cout << "\t " << FN1 << "\t\t " << LN1 << "\t" << FAN1 << "\t\t  " << YB1  << "\t\t" << LT1 <<"\n";
-				cout << "\t " << FN2 << "\t\t " << LN2 << "\t" << FAN2 << "\t\t  " << YB2  << "\t\t" << LT2 <<"\n";
-
-				cin >> YB0;
+			
+				system("color 06");
+				cout << "(----------------------------------------------------------------) \n";
+				cout << "|FIRST NAME    ||1=>"<<FN0<<"||2=>"<<FN1<<"||3=>"<<FN2                    <<"  \n";
+				cout << "|----------------------------------------------------------------| \n";
+				cout << "|LAST  NAME    ||1=>"<<LN0<<"||2=>"<<LN1<<"||3=>"<<LN2                    <<"  \n";
+				cout << "|----------------------------------------------------------------| \n";
+				cout << "|FATHER NAME   ||1=>"<<FAN0<<"||2=>"<<FAN1<<"||3=>"<<FAN2                 <<"  \n";
+				cout << "|----------------------------------------------------------------| \n";
+				cout << "|Year-Of-Birth ||1=>"<<YB0<<"||2=>"<<YB1<<"||3=>"<<YB1                    <<"  \n";
+				cout << "|----------------------------------------------------------------| \n";
+				cout << "|Life-Time(Sec)||1=>"<<LT0<<"||2=>"<<LT1<<"||3=>"<<LT2                    <<"  \n";
+				cout << "(----------------------------------------------------------------) \n";
+				
+				
 				sleep(9000);
-				system("color 0");
+				system("color 07");
 				system("cls");
 		}
 }h7;
